@@ -25,7 +25,7 @@ int main(int argc, const char* argv[]) {
         avg += students[i].score;
 
         if(students[i].score> max) {
-            max = student[i].score;
+            max = students[i].score;
         }
 
         avg /= count;
