@@ -7,7 +7,7 @@ int main(int argc, const char* argv[], const char* envp[]) {
     while(1) {
         char name[10] = {0};
         int score = 0;
-        scnaf("%s", name);
+        scanf("%s", name);
         if(strcmp(name, "quit") == 0)
             break;
         
