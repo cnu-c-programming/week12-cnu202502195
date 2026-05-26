@@ -14,12 +14,11 @@ int main(int argc, const char* argv[]) {
     char buffer[256];
 
     while(!feof(fp)) {
-        if(fscanf(fp, "%d", &num) == 1) {
+        if(sscanf(fp, "%d", &num) == 1) {
             sum += num;
         } 
         else {
-            fscanf(fp, "%s", buffer);
-            fprintf(stderr, "invalid: %s\n", buffer);
+            fprintf(stderr, "invalid input %s", buffer);
         }
     }
     
