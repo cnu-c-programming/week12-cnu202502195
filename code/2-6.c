@@ -10,7 +10,7 @@ int main(int argc, const char* argv[]) {
 
     char buffer[256];
     while(fgets(buffer, sizeof(buffer), fp) != NULL) {
-        if(strstr(buffer, argv[2]) != NULL)) {
+        if(strstr(buffer, target_str) != NULL) {
             printf("%s", buffer);
         }
     } 
