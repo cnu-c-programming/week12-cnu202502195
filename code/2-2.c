@@ -12,9 +12,9 @@ int main(int argc, const char* argv[]) {
     Student students[64];
 
     while(!feof(fp)) {
-        fscanf(fp, "%s %d", students[count].name, &students[count].score);
-
-        count++;
+        if(fscanf(fp, "%s %d", students[count].name, &students[count].score) == 2){
+                count++;
+            }
     }
 
 
