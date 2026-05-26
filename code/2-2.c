@@ -31,10 +31,9 @@ int main(int argc, const char* argv[]) {
     }
     avg /= count;
 
-        printf("max: %d\n", max);
-        printf("avg: %.2f\n", avg);
+    printf("max: %d\n", max);
+    printf("avg: %.2f\n", avg);
+    fclose(fp);
 
-        fclose(fp);
-
-        return 0;
+    return 0;
 }
