@@ -14,7 +14,7 @@ int main(int argc, const char* argv[]) {
     char buffer[256];
 
     while(fgets(buffer, sizeof(buffer), fp) != NULL) {
-        if(sscanf(fp, "%d", &num) == 1) {
+        if(sscanf(buffer, "%d", &num) == 1) {
             sum += num;
         } 
         else {
