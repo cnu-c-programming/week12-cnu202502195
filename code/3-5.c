@@ -24,6 +24,6 @@ int main(int argc, const char* argv[]) {
     }
     
     printf("sum: %d\n", sum);
-    fcose(fp);
+    fclose(fp);
     return 0;
 }
